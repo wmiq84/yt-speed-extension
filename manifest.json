@@ -1,0 +1,14 @@
+{
+    "manifest_version": 3,
+    "name": "YouTube Speed Tuner",
+    "version": "1.0",
+    "description": "Easily control YouTube playback speed with a custom speed tuner. Click the playback speed indicator on the YouTube player to set your desired speed (between 0 and 16x) and enjoy videos at your pace.",
+    "permissions": ["activeTab", "scripting"],
+    "host_permissions": ["https://www.youtube.com/*"],
+    "content_scripts": [
+      {
+        "matches": ["https://www.youtube.com/*"],
+        "js": ["content.js"]
+      }
+    ]
+}
